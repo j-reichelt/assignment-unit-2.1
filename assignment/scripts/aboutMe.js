@@ -32,8 +32,9 @@ pets+= 2;
 let allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-if(adventurous = true){console.log('Adventures are great!');}else {console.log('How about we stay home?')}
-
+//ternary operator = Shortcut for if statements. Takes 3 operands: a condition with ?, expresssion if True: and exprssion if False
+let response = adventurous ? "Adventures are great!" : "How about we stay home?";
+console.log(response); 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 if(luckyNumber = 2 || adventurous === true){console.log('Roll the dice!');}

@@ -33,10 +33,19 @@ const allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
 //ternary operator = Shortcut for if statements. Takes 3 operands: a condition with ?, expresssion if True: and exprssion if False
-if (adventurous === true);{
- console.log('Adventures are great!'); 
-if(adventurous != true); {
-console.log('How about we stay home?');}}
+
+
+//if (adventurous === true);{
+ //console.log('Adventures are great!'); 
+//if(adventurous != true); {
+//console.log('How about we stay home?');}}
+
+
+let adventures = (adventurous === true) ? console.log('Adventures are Great!'):
+(adventurous != true) ? console.log('How about we stay home?'):
+console.log(adventures);
+
+
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
@@ -62,10 +71,11 @@ if (pets > allowedPets){console.log('Oh no, I have too many pets!')};
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
-let mostPets = 3;
-if(pets === 'mostPets'){console.log('mostPets');}
-else if(friendsPets === 'mostPets'){console.log('mostPets');}
-console.log('mostPets');
+let mostPets = 0;
+if (pets > friendsPets){
+mostPets = pets;}
+else {mostPets = friendsPets;}
+console.log(mostPets);
 
 
 // 17 - Write a *switch* statement that logs:
